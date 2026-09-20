@@ -1,0 +1,14 @@
+K=3 SOFT-MEMBERSHIP THREE-MODEL PACKAGE — VERSION 1.3
+
+1. Upload this extracted package and the complete processed dataset to Kaggle.
+2. Enable a GPU accelerator.
+3. Open notebooks/KAGGLE_K3_SOFT_THREE_MODELS.ipynb.
+4. Run the notebook cells in order.
+5. Inspect validation_model_comparison.csv before running the final-test cell.
+6. Run the independent-test cell once, after all choices are frozen.
+
+All three models use the same training-only imbalance correction:
+soft targets x certainty weights x inverse soft-membership-mass class weights.
+
+Do not undersample the training manifest again. Do not use ordinary hard-label
+CrossEntropyLoss. Do not select or tune a model using test results.

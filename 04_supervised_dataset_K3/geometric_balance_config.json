@@ -1,0 +1,10 @@
+{
+  "dataset_folder_path": "C:\\Users\\m0zim\\OneDrive\\Desktop\\BTCUSDT_k3_forecasting_dataset",
+  "kmeans_model_path": "auto",
+  "output_folder_name": "geometric_balance",
+  "confidence_threshold": 0.5,
+  "membership_percentile": 95.0,
+  "random_seed": 42,
+  "create_exactly_balanced_training_manifest": true,
+  "overwrite_output": false
+}

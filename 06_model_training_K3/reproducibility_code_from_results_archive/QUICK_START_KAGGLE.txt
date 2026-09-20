@@ -1,0 +1,13 @@
+KAGGLE QUICK START
+
+1. Attach the complete BTCUSDT_k3_forecasting_dataset and this package.
+2. Enable a Kaggle GPU.
+3. Open notebooks/KAGGLE_K3_SOFT_THREE_MODELS.ipynb.
+4. Run cells in order through validation comparison.
+5. Confirm all training choices are final.
+6. Run the independent-test cell exactly once.
+7. Download the resulting ZIP before the Kaggle session ends.
+
+Models: soft Logistic Regression, embedding MLP, ResNet18 Layer 4.
+Classes: 0 Bullish, 1 Volatile, 2 Bearish.
+Imbalance: training-only inverse soft-membership-mass class weights plus certainty weights.

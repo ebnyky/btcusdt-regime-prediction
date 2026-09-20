@@ -1,0 +1,28 @@
+K=3 GEOMETRIC BALANCE PACKAGE — QUICK START
+
+1. Put this package anywhere on your Windows computer.
+
+2. Install its requirements:
+   python -m pip install -r requirements.txt
+
+3. Open config.json and change only dataset_folder_path so it points to the
+   complete BTCUSDT_k3_forecasting_dataset folder.
+
+4. Make sure the exact frozen K=3 model is still at the path recorded in the
+   dataset summary. If it is not, create this folder inside the dataset and
+   copy the model there:
+   models\kmeans.joblib
+
+5. Double-click run_balance.bat.
+
+6. Double-click run_validator.bat.
+
+7. Primary training files:
+   geometric_balance\manifests\train_confident_shuffled.csv
+   geometric_balance\reports\confident_training_class_weights.json
+
+8. Optional exactly balanced experiment:
+   geometric_balance\manifests\train_balanced_shuffled.csv
+
+Keep using the ORIGINAL chronological validation and test manifests for the
+primary evaluation. Do not tune the threshold from test results.

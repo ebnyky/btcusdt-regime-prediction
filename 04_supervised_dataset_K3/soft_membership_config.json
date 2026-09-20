@@ -1,0 +1,11 @@
+{
+  "dataset_folder_path": "C:\\Users\\m0zim\\OneDrive\\Desktop\\BTCUSDT_k3_forecasting_dataset",
+  "output_folder_name": "soft_membership",
+  "temperature_multiplier": 1.0,
+  "outlier_percentile": 99.0,
+  "certainty_weight_floor": 0.10,
+  "hard_label_near_tie_relative_tolerance": 0.0001,
+  "hard_label_near_tie_absolute_tolerance": 1e-8,
+  "random_seed": 42,
+  "overwrite_output": false
+}

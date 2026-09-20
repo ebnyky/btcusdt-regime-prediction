@@ -1,0 +1,32 @@
+{
+  "_instructions": [
+    "Future Phase-2 configuration; copy this file to config.json only when the K=3 rerun begins.",
+    "Use a newly generated dataset and an untouched output directory."
+  ],
+  "dataset_dir": "../outputs/01_kline_dataset_k3_phase",
+  "output_dir": "../outputs/02_cluster_regime_discovery_k3",
+  "train_manifest": "manifests/train_samples.csv",
+  "validation_manifest": "manifests/validation_samples.csv",
+  "image_column": "exported_image",
+  "batch_size": 16,
+  "num_workers": 0,
+  "cpu_threads": 4,
+  "image_size": 224,
+  "device": "auto",
+  "embedding_model": "resnet18",
+  "use_pretrained_weights": true,
+  "pca_components": 50,
+  "candidate_k": [3],
+  "selected_k": 3,
+  "kmeans_n_init": 50,
+  "stability_repeats": 10,
+  "stability_subsample": 4000,
+  "silhouette_subsample": 5000,
+  "random_seed": 42,
+  "nearest_images_per_cluster": 16,
+  "random_images_per_cluster": 16,
+  "montage_columns": 4,
+  "overwrite_output": false,
+  "reuse_saved_embeddings": true,
+  "pause_on_exit": false
+}

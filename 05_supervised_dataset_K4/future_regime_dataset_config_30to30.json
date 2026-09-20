@@ -1,0 +1,34 @@
+{
+  "_instructions": [
+    "Run from this 30_to_30 directory.",
+    "Edit ohlc_csv if the source file uses a different name."
+  ],
+  "ohlc_csv": "../../../data/BTCUSDT_1h.csv",
+  "pca_model": "../../../cluster_regime_package/historical_k4_models/pca.joblib",
+  "kmeans_model": "../../../cluster_regime_package/historical_k4_models/kmeans.joblib",
+  "output_dir": "../../../outputs/03_supervised_dataset_30to30",
+  "columns": {
+    "timestamp": "open_time",
+    "open": "open",
+    "high": "high",
+    "low": "low",
+    "close": "close"
+  },
+  "expected_frequency": "1h",
+  "window_size": 30,
+  "forecast_horizon": 30,
+  "stride": 1,
+  "chart_style": {"width_px": 360, "height_px": 360, "dpi": 100},
+  "split": {
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "extra_embargo_candles": 0
+  },
+  "device": "auto",
+  "batch_size": 32,
+  "num_workers": 0,
+  "cpu_threads": 4,
+  "random_seed": 42,
+  "overwrite_output": false
+}

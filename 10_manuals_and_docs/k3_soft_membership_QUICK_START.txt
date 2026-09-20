@@ -1,0 +1,19 @@
+K=3 SOFT-MEMBERSHIP PACKAGE
+
+1. Put this package anywhere on your computer.
+2. Install requirements:
+      python -m pip install -r requirements.txt
+3. Open config.json and change dataset_folder_path.
+4. Double-click run_soft_membership.bat.
+5. Double-click run_validator.bat.
+
+Use this training manifest:
+  <dataset>\soft_membership\manifests\train_soft_shuffled.csv
+
+Use the original full validation and test partitions for primary evaluation.
+The annotated validation/test manifests contain soft targets for uncertainty
+analysis, but test data is never used to set temperature, outlier limits, or
+class weights.
+
+Import soft_label_training.py in the supervised trainer. Do not train with
+ordinary hard-label CrossEntropyLoss, because that would ignore the new targets.

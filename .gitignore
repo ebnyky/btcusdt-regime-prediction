@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Generated data and results - deliberately not tracked.
+# The image corpora are ~3 GB and regenerable from this code; the result
+# archives include model checkpoints above GitHub's 100 MB per-file limit.
+outputs/
+images/
+manifests/
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+
+# Large source data - the hourly OHLC CSVs are fetched by
+# 01_data_acquisition/binance_hourly_ohlc_downloader.py
+data/
+datasets/
+*.csv
+!02_candlestick_rendering/reference_fixture_first30_candles.csv
+
+# Keep the frozen regime definition: small, and it defines the target.
+# (frozen_pca_*.joblib and frozen_kmeans_*.joblib are intentionally tracked.)
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Credentials - nothing of the sort is used by this project, but guard anyway
+.env
+*.key
+*.pem
+secrets.json

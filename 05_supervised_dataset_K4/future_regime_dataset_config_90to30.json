@@ -1,0 +1,47 @@
+{
+  "_instructions": [
+    "Run from this 90_to_30 directory.",
+    "Stride 30 is the first historical 90-to-30 configuration; edit to 15, 10 or 5 for later phases.",
+    "Use a distinct output_dir for each stride."
+  ],
+  "ohlc_csv": "../../../data/BTCUSDT_1h.csv",
+  "pca_model": "../../../cluster_regime_package/historical_k4_models/pca.joblib",
+  "kmeans_model": "../../../cluster_regime_package/historical_k4_models/kmeans.joblib",
+  "output_dir": "../../../outputs/05_supervised_dataset_90to30_stride30",
+  "columns": {
+    "timestamp": "open_time",
+    "open": "open",
+    "high": "high",
+    "low": "low",
+    "close": "close"
+  },
+  "expected_frequency": "1h",
+  "window_size": 90,
+  "forecast_horizon": 30,
+  "stride": 30,
+  "chart_style": {
+    "width_px": 360,
+    "height_px": 360,
+    "dpi": 100,
+    "candle_width": 0.62,
+    "wick_width": 1.0,
+    "bullish_color": "green",
+    "bearish_color": "red",
+    "background_color": "white",
+    "y_margin_fraction": 0.05,
+    "x_margin": 0.7,
+    "plot_padding_fraction": 0.1
+  },
+  "split": {
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "extra_embargo_candles": 120
+  },
+  "device": "auto",
+  "batch_size": 32,
+  "num_workers": 0,
+  "cpu_threads": 4,
+  "random_seed": 42,
+  "overwrite_output": false
+}

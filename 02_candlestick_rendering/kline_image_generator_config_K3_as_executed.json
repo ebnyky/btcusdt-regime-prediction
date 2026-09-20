@@ -1,0 +1,41 @@
+{
+  "_purpose": "Fresh full-range K=3 experiment: stage 1 kline image corpus generation",
+  "ohlc_csv": "/kaggle/input/datasets/mozimandias/btc-usdt-1h-raw/BTCUSDT_1h_2020-01-01_to_2026-06-01.csv",
+  "output_dir": "/kaggle/working/01_kline_dataset_k3",
+  "existing_output_policy": "resume",
+  "columns": {
+    "timestamp": "open_time",
+    "open": "open",
+    "high": "high",
+    "low": "low",
+    "close": "close"
+  },
+  "expected_frequency": "1h",
+  "window_size": 30,
+  "stride": 1,
+  "chart_style": {
+    "width_px": 360,
+    "height_px": 360,
+    "dpi": 90
+  },
+  "split": {
+    "validation_start_index": null,
+    "train_fraction": 0.9,
+    "embargo_candles": 30
+  },
+  "locked_source_expectations": {
+    "sha256": "c938439e45cce76aee7234c62be1ba5aaa6b80c6f3598924715d5d0c9563ce8d",
+    "rows": 48281,
+    "date_start": "2020-01-01T00:00:00+00:00",
+    "date_end": "2025-07-06T00:00:00+00:00",
+    "missing_hours": 32,
+    "gap_events": 15,
+    "candidate_windows": 48252,
+    "valid_windows": 47817,
+    "skipped_windows": 435,
+    "training_samples": 42976,
+    "validation_samples": 4782,
+    "purged_samples": 59,
+    "validation_start_index": 43470
+  }
+}

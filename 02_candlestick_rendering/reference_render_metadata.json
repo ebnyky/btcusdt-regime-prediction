@@ -1,0 +1,15 @@
+{
+  "file": "sample_0_29.jpg",
+  "sha256": "9551df8b81bd0b63ff071884c446525942e20e7856c70c198e3c423aabe80487",
+  "width_px": 360,
+  "height_px": 360,
+  "dpi": 90,
+  "mode": "RGB",
+  "sample_name": "sample_0_29",
+  "start_index": 0,
+  "stop_index": 29,
+  "window_length": 30,
+  "renderer_profile": "historical_original_autoscaled_bxp",
+  "verification_fixture": "BTCUSDT_1h_2020-01-01_first30.csv",
+  "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2020-01.zip"
+}

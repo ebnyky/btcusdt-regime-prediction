@@ -1,0 +1,30 @@
+{
+  "_instructions": [
+    "Place the original hourly BTCUSDT CSV in data/ or change ohlc_csv.",
+    "output_dir is resolved relative to this config file and is printed at the end of the run.",
+    "validation_start_index=24047 reconstructs the recovered historical split. Set it to null to use train_fraction."
+  ],
+  "ohlc_csv": "data/BTCUSDT_1h.csv",
+  "output_dir": "outputs/01_kline_dataset",
+  "existing_output_policy": "error",
+  "columns": {
+    "timestamp": "open_time",
+    "open": "open",
+    "high": "high",
+    "low": "low",
+    "close": "close"
+  },
+  "expected_frequency": "1h",
+  "window_size": 30,
+  "stride": 1,
+  "chart_style": {
+    "width_px": 360,
+    "height_px": 360,
+    "dpi": 90
+  },
+  "split": {
+    "validation_start_index": 24047,
+    "train_fraction": 0.9,
+    "embargo_candles": 30
+  }
+}
