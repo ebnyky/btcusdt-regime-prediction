@@ -3,7 +3,7 @@
 A supervised learning approach using cluster-derived labels generated through unsupervised learning.
 
 MSc Data Science thesis — Department of Computer Science, University of Ghana, September 2026.
-Nyamekye Emmanuel Barima (22425704).
+Author: Nyamekye Emmanuel Barima.
 
 ---
 
